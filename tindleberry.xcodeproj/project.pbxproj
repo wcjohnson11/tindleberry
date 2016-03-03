@@ -14,6 +14,7 @@
 		5CD54C8A1C87E12F00613B27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD54C881C87E12F00613B27 /* Main.storyboard */; };
 		5CD54C8C1C87E12F00613B27 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5CD54C8B1C87E12F00613B27 /* Assets.xcassets */; };
 		5CD54C8F1C87E12F00613B27 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CD54C8D1C87E12F00613B27 /* LaunchScreen.storyboard */; };
+		B26D5EA81C87F6EA00528F2D /* SpringAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26D5EA71C87F6EA00528F2D /* SpringAnimation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5CD54C8B1C87E12F00613B27 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5CD54C8E1C87E12F00613B27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5CD54C901C87E12F00613B27 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26D5EA71C87F6EA00528F2D /* SpringAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpringAnimation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				5CD54C901C87E12F00613B27 /* Info.plist */,
 				5CB1E42A1C87E6DD00473BA5 /* DraggableImageView.xib */,
 				5CB1E42C1C87E70400473BA5 /* DraggableImageView.swift */,
+				B26D5EA71C87F6EA00528F2D /* SpringAnimation.swift */,
 			);
 			path = tindleberry;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5CD54C871C87E12F00613B27 /* CardsViewController.swift in Sources */,
+				B26D5EA81C87F6EA00528F2D /* SpringAnimation.swift in Sources */,
 				5CB1E42D1C87E70400473BA5 /* DraggableImageView.swift in Sources */,
 				5CD54C851C87E12F00613B27 /* AppDelegate.swift in Sources */,
 			);
