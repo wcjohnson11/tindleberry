@@ -17,32 +17,30 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView clipsSubviews="YES" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ZPu-ws-Xqh">
-                                <rect key="frame" x="8" y="61" width="304" height="304"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <connections>
-                                    <outletCollection property="gestureRecognizers" destination="hr8-Re-o0f" appends="YES" id="tn2-Ke-9zN"/>
-                                </connections>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="Qns-As-QVJ">
                                 <rect key="frame" x="-3" y="405" width="323" height="108"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" id="zhA-jM-34W" customClass="DraggableImageView" customModule="tindleberry" customModuleProvider="target">
+                                <rect key="frame" x="7" y="81" width="306" height="293"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="hr8-Re-o0f" appends="YES" id="ZBp-Cl-dg3"/>
+                        </connections>
                     </view>
                     <connections>
-                        <outlet property="parentView" destination="8bC-Xf-vdC" id="Afk-ZW-HFl"/>
-                        <outlet property="profileImageView" destination="ZPu-ws-Xqh" id="mmH-Z4-9Dm"/>
+                        <outlet property="parentView" destination="8bC-Xf-vdC" id="MVV-Jf-3ie"/>
+                        <outlet property="profileImageView" destination="zhA-jM-34W" id="rJ8-hw-gLT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="hr8-Re-o0f">
-                    <connections>
-                        <action selector="onPhotoPanned:" destination="BYZ-38-t0r" id="1VV-iM-BOV"/>
-                    </connections>
-                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="hr8-Re-o0f"/>
             </objects>
             <point key="canvasLocation" x="162" y="366"/>
         </scene>

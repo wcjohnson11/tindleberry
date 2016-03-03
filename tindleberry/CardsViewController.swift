@@ -10,27 +10,14 @@ import UIKit
 
 class CardsViewController: UIViewController {
     @IBOutlet var parentView: UIView!
-    var gestureBeginPt: CGPoint?
-    
-    @IBOutlet weak var profileImageView: UIImageView!
-    
-    @IBAction func onPhotoPanned(panGestureRecognizer: UIPanGestureRecognizer) {
-        if panGestureRecognizer.state == UIGestureRecognizerState.Began {
-            gestureBeginPt = profileImageView.center
-        } else if panGestureRecognizer.state == UIGestureRecognizerState.Changed {
-            let translation = panGestureRecognizer.translationInView(parentView)
-            profileImageView.center.x = translation.x
-        } else if panGestureRecognizer.state == UIGestureRecognizerState.Ended {
-            
-        }
-    }
+    @IBOutlet weak var profileImageView: DraggableImageView!
     
     func setupImages(){
         profileImageView.image = UIImage(named: "ryan")
     }
     
     override func viewDidLoad() {
-        super.viewDidLoad()
+        super.viewDidLoad() 
         setupImages()
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -42,4 +29,3 @@ class CardsViewController: UIViewController {
 
 
 }
-
